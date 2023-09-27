@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="stely.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container sombras" style="background: #fff; height: auto; min-height: 100vh; ">
+    <nav class="navbar navbar-expand-lg h bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="resoucer/img/logo_principal.png" alt="Logo" style="width: 30px; height: 35px; " class="p-0 m-0 ">
+        <a class="navbar-brand letraLeangue color_principal_verde " style="margin-left: 10px; margin-top: 5px;"
+          href="#">WIWUAKUNA</a>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+          <form class="d-flex" role="search" style="width: 80%;">
+
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar animales"
+              aria-label="Search">
+            <button class="btn btn-sm color_principal_verde " style="font-weight: bold; border: 1px solid #dbdbdb;"
+              type="submit">Buscar</button>
+          </form>
+          <button type="button" class="btn btn-sm  "
+            style="font-weight: bold; border: 1px solid #dbdbdb; position: absolute; right: 5px; background: #22704A; color: #dbdbdb;">
+            Login</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row mt-2  d-flex justify-content-center ">
+      <div class="col-lg-12 mb-3">
+        <ul class="nav nav-pills  justify-content-center">
+          <li class="nav-item">
+            <a id="btn_admin" class="nav-link  " aria-current="page" href="#">Administración de animale</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn_incubacion" class="nav-link" href="#">Incubación</a>
+          </li>
+          <li class="nav-item">
+            <a id="btn_ventas" class="nav-link" href="#">Ventas</a>
+          </li>
+
+        </ul>
+      </div>
+      <div id="container-admin" class="row justify-content-center ">
+
+        <div class="col-lg-7 p-4 " style="background: #ebebeb; border-radius: 10px; height: auto;">
+          <div>
+            <h5 class=" letraLeangue" style="font-size: 15px; color: #035936;">REGISTROS</h5>
+          </div>
+
+          <div class="row ">
+            <div class="col-lg-6">
+              <input placeholder="Nombre" class=" form-control form-control-sm" type="text">
+            </div>
+            <div class="col-lg-6">
+              <input placeholder="Raza" class="  form-control " type="file">
+            </div>
+            <div class="col-lg-6 mt-2 ">
+              <select class="form-control form-control-sm" Name="" Size="">
+                <option> Gallinas </option>
+                <option> Vacas </option>
+                <option> Peces </option>
+                <option> List item N </option>
+              </select>
+            </div>
+
+            <div class="col-lg-6 mt-2">
+              <select class="form-control form-control-sm" aria-placeholder="" Name="" Size="">
+                <option> Hembra </option>
+                <option> Macho </option>
+              </select>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-end">
+              <button type="button" style="background: #035936;"
+                class="btn mt-3 btn-sm color_secundario_blanco">Guardar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 p-4  mt-2  " style="background: #ebebeb;border-radius: 10px;  height: 350px">
+          <div >
+            <table class="table table-light" >
+              <thead>
+                <tr >
+                  <th class="color_principal_verde" scope="col">#</th>
+                  <th class="color_principal_verde" scope="col">Nombre </th>
+                  <th class="color_principal_verde" scope="col">Especie</th>
+
+                  <th class="color_principal_verde " style="text-align: end;" scope="col">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Gallina </td>
+                  <td>brahma</td>
+                  <td class="d-flex justify-content-end">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                    
+                      <button type="button" style="font-weight: bold;" class="btn btn-sm btn-light">
+                        <img width="15" height="15" src="https://img.icons8.com/parakeet/48/edit-file.png" alt="edit-file"/>
+                        Modificar</button>
+                      <button type="button" style="font-weight: bold;" class="btn btn-sm btn-light">
+                        <img  width="15" height="15" src="https://img.icons8.com/color/48/low-price.png" alt="low-price"/>
+                        Vender</button>
+                      <button type="button" style="font-weight: bold;" class="btn btn-sm btn-light">
+                        <img width="15" height="15" src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/external-trash-can-office-those-icons-lineal-color-those-icons.png" alt="external-trash-can-office-those-icons-lineal-color-those-icons"/>
+                        Eliminar</button>
+                    </div>
+                  </td>
+                </tr>
+  
+              </tbody>
+            </table>
+          </div>
+         
+        </div>
+      </div>
+      <div id="container-gestacion" class="row justify-content-center ">
+        <div class="row d-flex jus">
+          <div class="col-lg-4">
+            <div class="card" style="border: 1px solid #c0bebaa2; ;width: 100%;  border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title mb-0"><b>GALLINA BRAHMA</b></h5>
+                <div class="row mt-0 p-3">
+                  <div class="row col-lg-12 p-0">
+                    <div class="col-lg-4">
+                      <h6 style="font-weight: bold;">Días</h6>
+                      <div class="mb-4" style="font-size: 20px; font-weight: bold; position: relative;
+                          display: flex;justify-content: center; align-items: center; 
+                           width: 80px; height: 80px;border: #22704A solid 7px; border-radius: 50%;">
+                        <div style="
+                            z-index: 1;
+                            position: absolute; 
+                            width: 100%;
+                            height: 100%;                             
+                            border: #e9a003  solid 15px; 
+                            border-radius: 50%;">
+                        </div>
+                        <div>21</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 ">
+                      <h6 style="font-weight: bold;">Valores recomendados</h6>
+                      <div class="d-flex">
+                        <div style="width: 100%; height: auto; margin: 10px; ">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/hygrometer.png"
+                            alt="hygrometer" />
+                          <h5 style="font-weight: bold;">60%</h5>
+                        </div>
+                        <div style="width: 100%; height: auto;  margin: 10px; ">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/temperature--v1.png"
+                            alt="temperature--v1" />
+                          <h5 style="font-weight: bold;">37.8°</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 style="font-weight: bold;">Progreso de la Incubación</h6>
+                  <div class="" style="width: 60%; height: auto; background: #2a7e55;
+                     border-radius: 10px 0px 0px 10px; color: #fff;">
+                    60%
+                  </div>
+                  <div class="" style="width: 40%; height: auto; background: #9c9893; 
+                    border-radius: 0px 10px 10px 0px; color: #fff;">
+                    40%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card" style="border: 1px solid #c0bebaa2; ;width: 100%;  border-radius: 20px;">
+              <div class="card-body">
+                <h5 class="card-title mb-0"><b>CODORNIZ JAPONESA</b></h5>
+                <div class="row mt-0 p-3">
+                  <div class="row col-lg-12 p-0">
+                    <div class="col-lg-4">
+                      <h6 style="font-weight: bold;">Días</h6>
+                      <div class="mb-4" style="font-size: 20px; font-weight: bold; position: relative;
+                          display: flex;justify-content: center; align-items: center; 
+                           width: 80px; height: 80px;border: #ff7d66 solid 7px; border-radius: 50%;">
+                        <div style="
+                            z-index: 1;
+                            position: absolute; 
+                            width: 100%;
+                            height: 100%;                             
+                            border: #4483a0  solid 15px; 
+                            border-radius: 50%;">
+                        </div>
+                        <div>21</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 ">
+                      <h6 style="font-weight: bold;">Valores recomendados</h6>
+                      <div class="d-flex">
+                        <div style="width: 100%; height: auto; margin: 10px; ">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/hygrometer.png"
+                            alt="hygrometer" />
+                          <h5 style="font-weight: bold;">60%</h5>
+                        </div>
+                        <div style="width: 100%; height: auto;  margin: 10px; ">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/temperature--v1.png"
+                            alt="temperature--v1" />
+                          <h5 style="font-weight: bold;">37.8°</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 style="font-weight: bold;">Progreso de la Incubación</h6>
+                  <div class="" style="width: 60%; height: auto; background: #2a7b7e;
+                     border-radius: 10px 0px 0px 10px; color: #fff;">
+                    60%
+                  </div>
+                  <div class="" style="width: 40%; height: auto; background: #a59582e3; 
+                    border-radius: 0px 10px 10px 0px; color: #fff;">
+                    40%
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="containe-ventas" class="row justify-content-center ">
+        <div class="row d-flex jus">
+          <div class="col-lg-6"  style="background: #ebebeb; border-radius: 10px; height: auto; padding: 10px;" >
+            <table class="table table-light" style="width: 100%;">
+              <thead>
+                <tr>
+                  <th scope="col">Categoría</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Promedio de venta</th>
+                  <th scope="col">Valor total de venta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Aves</th>
+                  <td>50</td>
+                  <td>$ 5</td>
+                  <td>$ 178</td>
+                </tr>
+                <tr>
+                  <th scope="row">Vacas</th>
+                  <td>5</td>
+                  <td>$ 500</td>
+                  <td>$ 2500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Peces</th>
+                  <td>50</td>
+                  <td>$ 5</td>
+                  <td>$ 178</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="row pt-2 p-4">
+              <div class="col-lg-6">
+                <h6 style="font-weight: bold; text-align: center;">Ganancias totales</h6>
+                <div style="font-size: 50px;text-align:center">$800</div>
+              </div>
+              <div class="col-lg-6">
+                <h6 style="font-weight: bold; text-align: center;">Animales vendidos</h6>
+                <div style="font-size: 50px;text-align:center">105</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Primero</th>
+                  <th scope="col">Último</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>
